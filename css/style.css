@@ -729,7 +729,7 @@ address {
 }
 
 .form-btn {
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     border: none;
     border-radius: 4px;
@@ -741,7 +741,7 @@ address {
     letter-spacing: 0.04em;
     text-align: center;
     color: #fff;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -813,22 +813,25 @@ address {
 }
 
 .castom-checkbox {
-    display: block;
+    display: inline-flex;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     background-color: transparent;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
     justify-content: center;
+    fill: transparent;
 }
 
 .privacy-policy-checkbox:checked+.privacy-policy-label>.castom-checkbox {
     background-color: #404bbf;
     border-color: #404bbf;
+    border: none;
+    fill: #f4f4fd;
 }
 
 .checkbox-mark {
