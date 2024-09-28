@@ -52,7 +52,7 @@
             <div class="container">
                 <h1 class="main-title">Effective Solutions <br>for Your Business</h1>
 
-                <button class="main-button" type="button">Order Service</button>
+                <button class="main-button" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
 
@@ -382,8 +382,15 @@
         </div>
     </footer>
 
-    <div class="backdrop">
+    <div data-modal class="backdrop">
         <div class="modal-window">
+            <button data-modal-close type="button" class="close-icon-container">
+                <svg class="modal-close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+
+
             <p class="modal-title">Leave your contacts and we will call you back</p>
 
             <form>
@@ -421,17 +428,31 @@
                 </div>
 
                 <div class="input-container">
-                    <label class="user-label" for="user-email">Email</label>
+                    <label class="user-label" for="user-comment">Comment</label>
 
                     <textarea class="user-comment" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
                 </div>
 
-                <div class="btn-container">
-                    <button class="form-btn" type="submit">Send</button>
+                <div class="checkbox-container">
+                    <input class="privacy-policy-checkbox visually-hidden" id="privacy-policy" type="checkbox" name="privacy-policy">
+
+                    <label class="privacy-policy-label" for="privacy-policy">
+                        <span class="castom-checkbox">
+                            <svg class="checkbox-mark" width="10" height="8">
+                                <use href="./images/icons.svg#icon-checkbox-mark"></use>
+                            </svg>
+                        </span>
+                    </label>
+
+                    <p class="privacy-policy-text"> I accept the terms and conditions of the <a class="privacy-policy-link" href="">Privacy Policy</a></p>
                 </div>
+
+                <button class="form-btn" type="submit">Send</button>
             </form>
         </div>
     </div>
+    <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
