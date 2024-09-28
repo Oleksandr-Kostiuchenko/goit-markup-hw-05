@@ -673,6 +673,10 @@ address {
     outline: transparent;
 }
 
+.input-container-comment {
+    margin-bottom: 16px;
+}
+
 .data-input:focus,
 .user-comment:focus {
     outline: none;
@@ -705,12 +709,14 @@ address {
     resize: none;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    padding-top: 8px;
-    padding-left: 16px;
+    padding: 8px 16px;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #181923;
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .user-comment:placeholder-shown {
@@ -792,6 +798,13 @@ address {
     line-height: 1.33333;
     text-decoration: underline;
     color: #4d5ae5;
+}
+
+.privacy-policy-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
 }
 
 .checkbox-container {
