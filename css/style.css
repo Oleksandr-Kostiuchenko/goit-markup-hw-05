@@ -704,6 +704,7 @@ address {
 }
 
 .user-comment {
+    line-height: 1.17;
     width: 360px;
     height: 120px;
     resize: none;
@@ -711,7 +712,6 @@ address {
     border-radius: 4px;
     padding: 8px 16px;
     font-size: 12px;
-    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #181923;
     background-color: transparent;
