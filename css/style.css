@@ -646,6 +646,10 @@ address {
     margin-left: 16px;
 }
 
+.subscribe-input::placeholder {
+    color: #fff;
+}
+
 
 /*============== /FOOTER SECTION ==============*/
 
@@ -885,6 +889,7 @@ address {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
 }
 
 .privacy-policy-checkbox:checked+.privacy-policy-label>.castom-checkbox {
